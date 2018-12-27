@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* SEARCH PAGE */
+#movies .card {
+  height: 480px;
+}
+
+#movies img {
+  height: 78.125%;
+}
+
+#movies h5 {
+  height: 4rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  /* Set the fixed height of the footer here */
+  height: 120px;
+  text-align: center;
+}
+
+.footer a {
+  color: rgb(211, 219, 233);
+}
+
+.footer .footer-content {
+  padding: 1em 2em 0 2em;
+}
+
+/* MOVIE DETAILS PAGE */
+#poster img {
+  width: 100%;
+}
+
+
+/* MEDIA QUERIES */
+@media(max-width:1199px){
+  #movies .card {
+    /* height: 480px; */
+    height: 535px;
+  }
+  
+  #movies img {
+    height: 80%;
+  }
+  
+  #movies h5 {
+    height: 4rem;
+  }
+
+  .footer {
+    height: 150px;
+  }
+}
+
+@media(max-width:991px){
+  #movies .card {
+    /* height: 480px; */
+    height: 595px;
+  }
+  
+  #movies img {
+    height: 82.017%;
+  }
+  
+  #movies h5 {
+    height: 4rem;
+  }
+
+  #poster {
+    text-align: center;
+  }
+
+  #poster img {
+    width: 60%;
+    margin: 15px 0;
+  }
+
+  #details h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width:767px){
+  #movies .card {
+    height: 866px;
+  }
+  
+  #movies img {
+    height: 87.182%;
+  }
+  
+  #movies h5 {
+    height: 4rem;
+  }
+
+  .footer {
+    height: 150px;
+  }
+
+  #poster img {
+    width: 80%;
+  }
+
+  #details h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media(max-width:575px){
+  .footer {
+    height: 200px;
+  }
+
+  #poster img {
+    width: 100%;
+  }
+
+  #details h2 {
+    font-size: 1.3rem;
+  }
+}

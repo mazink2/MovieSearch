@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MovieSearch</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="index.html" class="navbar-brand">MovieSearch</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-center mb-4">MovieSearch</h1>
+      <form id="searchForm" class="px-5">
+        <input type="text" id="searchText" class="form-control" placeholder="Search for a movie">
+      </form>
+    </div>
+  </div>
+
+  <div class="container mb-3">
+    <div id="movies" class="row"></div>
+  </div>
+
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="footer-content">
+      <h5 class="text">
+        Built using the Solar theme for Bootstrap 4 from <a href="http://bootswatch.com">Bootswatch</a>, a bit of custom CSS, Vanilla JS and Axios to get data from the <a href="http://www.omdbapi.com/">OMDb API</a>
+      </h5>
+      <h5>
+        Built by <a href="http://mazink2.com">Mazin Abdul Karim</a>
+      </h5>
+    </div>
+  </footer>
+  
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
